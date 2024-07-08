@@ -13,19 +13,9 @@ app.use(express.json());
 connectDB();
 
 // CORS
- const whitelist = ['https://intellitask-1.onrender.com', 'https://intellitask-1.onrender.com/'];
 
- const corsOptions = {
-   origin: function (origin, callback) {
-     if (whitelist.includes(origin)) {
-       callback(null, true);
-     } else {
-       callback(new Error('Not allowed by CORS'));
-     }
-   }
- }
 
-app.use(cors(corsOptions));
+app.use(cors('*'));
 
 // Routing 
 app.use('/api/users', userRouter);
