@@ -1,14 +1,14 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "TaskUnity App",
+  "description": "IntelliTask App",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js"
   },
-  "author": "Víctor Iván López",
+  "author": "Vaibhav Rohaan",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
