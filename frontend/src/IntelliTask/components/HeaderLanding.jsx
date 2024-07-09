@@ -20,7 +20,7 @@ export const HeaderLanding = () => {
             </li>
             <li>
               <Link
-                to='/auth/register'
+                to=''
                 className='w-max rounded-lg border bg-taskunity-800 px-4 py-2 text-base text-white font-bold transition-colors hover:bg-opacity-90'
               >
                 <span>Register</span>
