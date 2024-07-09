@@ -8,7 +8,7 @@ export const HeroSection = () => {
           <h1 className="text-6xl font-extrabold mb-6">Welcome to IntelliTask</h1>
           <p className="text-xl mb-8">Simplify, organize, and manage your projects with ease.</p>
           <Link
-            to='/auth/register'
+            to='/auth/login'
             className='inline-block bg-yellow-500 px-8 py-4 text-lg font-bold rounded-lg shadow-lg hover:bg-yellow-600 transition duration-300'
           >
             Get Started Now
@@ -45,7 +45,7 @@ export const HeroSection = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <h2 className="text-4xl font-extrabold mb-4">Ready to transform your project management?</h2>
           <Link
-            to='/auth/register'
+            to='/auth/login'
             className='inline-block bg-yellow-500 px-8 py-4 text-lg font-bold rounded-lg shadow-lg hover:bg-yellow-600 transition duration-300'
           >
             Join IntelliTask Today
