@@ -7,7 +7,7 @@ export const checkUserAuth = async (req, res, next) => {
   let token = req.headers.authorization;
 
   if (!token) {
-    return res.status(401).json({ message: 'Acceso no autorizado. Token no proporcionado.' });
+    return res.status(401).json({ message: 'Not Authorized' });
   }
 
   if (token.startsWith('Bearer')) {
@@ -17,9 +17,9 @@ export const checkUserAuth = async (req, res, next) => {
       req.user = await User.findById(decoded.id).select('_id name email');
       return next();
     } catch (error) {
-      return res.status(404).json({ message: 'Token no válido o expirado.', error });
+      return res.status(404).json({ message: 'Expired token.', error });
     }
   } else {
-    return res.status(404).json({ message: 'Token no válido.' });
+    return res.status(404).json({ message: 'Invalid token.' });
   }
 }
