@@ -87,26 +87,6 @@ export const LoginPage = () => {
             </button>
           </div>
   
-          <nav className="flex flex-col gap-5">
-            <p className="flex gap-1 justify-center text-gray-600">
-              or
-              <Link
-                to="/auth/forgot-password"
-                className="text-purple-700 underline font-bold"
-              >
-                Forgot your password?
-              </Link>
-            </p>
-            <p className="flex gap-1 justify-center text-gray-600">
-              Don't have an account?
-              <Link
-                to="/auth/register"
-                className="text-purple-700 underline font-bold"
-              >
-                Register for one!
-              </Link>
-            </p>
-          </nav>
         </form>
       </div>
     </div>
